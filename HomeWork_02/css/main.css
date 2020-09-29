@@ -1,0 +1,58 @@
+body {
+    font-family: Arial;
+
+}
+
+h2.title_h2 {
+    font-size: 230%;
+    color: orange;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+}
+
+div span {
+    margin-left: 25px;
+}
+
+h3 {
+    font-size: 120%;
+}
+
+h1 {
+    font-size: 140%;
+}
+
+h1::first-letter {
+    font-size: 2em;
+}
+
+img {
+    float: left;
+}
+
+a {
+    color: orange;
+    font-weight: bold;
+}
+
+a:hover {
+    color: green;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+#span_bootom {
+    font-weight: bold;
+}
+
+.footer {
+    font-size: 90%;
+    text-align: center;
+}
+
+
+
+
