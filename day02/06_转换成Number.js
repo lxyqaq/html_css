@@ -21,6 +21,7 @@
  */
 
 
+
 var a = "   ";
 
 a = Number(a);
