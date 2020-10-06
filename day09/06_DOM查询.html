@@ -46,7 +46,13 @@
                     }
                 }
 
-
+                var btn04 = document.getElementById("btn04");
+                btn04.onclick = function () {
+                    var cityli = document.querySelectorAll('ul#city > li');
+                    for (var i = 0 ; i < cityli.length ; i++){
+                        alert(cityli[i].innerHTML);
+                    }
+                }
 
             }
         </script>
