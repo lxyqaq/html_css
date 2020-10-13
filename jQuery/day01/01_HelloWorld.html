@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HelloWorld</title>
+        <script type="text/javascript" src="../js/jquery.js"></script>
+        <script type="text/javascript">
+
+            /*window.onload = function () {
+                var btn01 = document.getElementById("btn01");
+                btn01.onclick = function () {
+
+                    alert("js的原生单击事件");
+
+                }
+            }*/
+
+            //表示页面加载完成 之后，相当 window.onload = function () {}
+            $(function () {
+
+                //表示按id查询对象
+                var $btnObj = $("#btn01");
+                $btnObj.click(function () {
+                    alert("jQuery的单击事件");
+                })
+                
+            })
+
+        </script>
+    </head>
+    <body>
+
+        <button id="btn01">点我一下</button>
+
+    </body>
+</html>
