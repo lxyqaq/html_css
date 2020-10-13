@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>核心函数</title>
+        <script type="text/javascript" src="../js/jquery.js"></script>
+        <script type="text/javascript">
+
+            //核心函数的4个作用:
+
+            //传入参数为[函数]时：在文档加载完成后执行这个函数
+            //传入参数为[HTML字符串]时：根据这个字符串创建元素节点对象
+            //传入参数为[选择器字符串]时：根据这个字符串查找元素节点对象
+            //传入参数为[DOM对象]时：将DOM对象包装为jQuery对象返回
+
+            $(function () {
+                // alert("页面加载完成，自动调用");
+
+                $("<div>我是script中的div</div>").appendTo("body");
+
+                // alert($("button").length);
+
+                // alert($("#btn01"));
+
+                var btn01 = document.getElementById("btn01");
+                alert($(btn01));
+
+            })
+
+        </script>
+    </head>
+    <body>
+
+        <button id="btn01">按钮1</button>
+        <button>按钮2</button>
+        <button>按钮3</button>
+
+    </body>
+</html>
