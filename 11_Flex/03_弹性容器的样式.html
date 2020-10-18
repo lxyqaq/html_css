@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>弹性容器的样式</title>
+        <style type="text/css">
+
+            * {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            ul {
+                width: 600px;
+                height: 800px;
+                border: 10px red solid;
+                display: flex;
+                flex-flow: row wrap;
+                /*
+                justify-content
+                    - 如何分配主轴上的空白空间（主轴上的元素如何排列）
+                    - 可选值：
+                        flex-start 元素沿着主轴起边排列
+                        flex-end 元素沿着主轴终边排列
+                        center 元素居中排列
+                        space-around 空白分布到元素两侧
+                        space-between 空白均匀分布到元素间
+                        space-evenly 空白分布到元素的单侧
+
+                */
+                /* justify-content: center; */
+
+                /*
+                 align-items:
+                    - 元素在辅轴上如何对齐
+                    - 元素间的关系
+                        - 可选值：
+                            stretch 默认值，将元素的长度设置为相同的值
+                            flex-start 元素不会拉伸，沿着辅轴起边对齐
+                            flex-end 沿着辅轴的终边对齐
+                            center 居中对齐
+                            baseline 基线对齐
+                 */
+            }
+
+            li {
+                width: 200px;
+                background-color: #bbffaa;
+                font-size: 50px;
+                text-align: center;
+                line-height: 100px;
+            }
+
+            li:nth-child(1) {
+                /* align-self: 用来覆盖当前弹性元素上的align-items */
+                align-self: stretch;
+            }
+
+            li:nth-child(2) {
+                background-color: pink;
+            }
+
+            li:nth-child(3) {
+                background-color: orange;
+            }
+
+            li:nth-child(4) {
+                background-color: yellow;
+            }
+
+            li:nth-child(5) {
+                background-color: chocolate;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <ul>
+            <li>1</li>
+            <li>
+                2
+                <div>2</div>
+            </li>
+            <li>
+                3
+                <div>3</div>
+                <div>3</div>
+            </li>
+
+            <li>1</li>
+
+            <li>
+                2
+                <div>2</div>
+            </li>
+        </ul>
+
+    </body>
+</html>
