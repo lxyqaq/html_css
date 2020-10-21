@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+
+            body {
+                justify-content: center;
+                align-self: center;
+                min-height: 100vh;
+                background: #575dbb;
+            }
+
+            .container {
+                position: relative;
+                max-width: 100%;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                grid-template-rows: minmax(100px, auto);
+                margin: 40px;
+                grid-auto-flow: dense;
+                grid-gap: 10px;
+            }
+
+            .container .box {
+                background: #ffffff;
+                padding: 20px;
+                display: grid;
+                font-size: 20px;
+                place-items: center;
+                text-align: center;
+                color: #54BAF3;
+                transition: 0.5s;
+            }
+
+            .container .box:hover {
+                background: #54BAF3;
+                color: #ffffff;
+            }
+
+            .container .box img {
+                position: relative;
+                max-width: 100px;
+                margin-bottom: 10px;
+            }
+
+            .container .box:nth-child(1) {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .container .box:nth-child(2) {
+                grid-column: span 1;
+                grid-row: span 2;
+            }
+
+            .container .box:nth-child(4) {
+                grid-column: span 1;
+                grid-row: span 2;
+            }
+
+            .container .box:nth-child(5) {
+                grid-column: span 4;
+                grid-row: span 1;
+            }
+
+            .container .box:nth-child(6) {
+                grid-column: span 4;
+                grid-row: span 1;
+                margin-top: 10px;
+            }
+
+            @media (max-width: 991px) {
+                .container {
+                    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+                    grid-template-rows: minmax(auto, auto);
+                }
+
+                .container .box {
+                    grid-column: unset !important;
+                    grid-row: unset !important;
+                }
+
+            }
+
+            .navbar {
+                width: 1345px;
+                height: 20px;
+                line-height: 20px;
+                margin: 20px auto;
+                background-color: #575dbb;
+                list-style: none;
+                display: flex;
+            }
+
+            .navbar a {
+                display: block;
+                color: #54BAF3;
+                text-decoration: none;
+                font-size: 20px;
+            }
+
+            .navbar li {
+                flex-grow: 0.5;
+            }
+
+            .navbar a:hover {
+                color: #ffffff;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Covid19.html">COVID-19</a></li>
+                <li><a href="KeepSafe.html">How To Keep Safe</a></li>
+                <li><a href="CopeStress.html">How To Cope With Stress</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="box">
+                <div class="content">
+                    <img src="img/img_2/009-soap.png">
+                    <p>
+                        Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap
+                        and water.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <img src="img/img_2/008-mask.png">
+                    <p>
+                        Masks are a key measure to suppress the spread of COVID-19 and save lives.<br><br>
+                        Wear a mask, especially when you can't physically distance, to limit the risk of getting
+                        COVID-19.<br><br>
+                        People wearing masks are protected from getting infected. Masks also prevent onward transmission
+                        when worn by a person who is infected, whether they have symptoms or not.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <img src="img/img_2/cleaning.png">
+                    <p>
+                        Clean and disinfect surfaces frequently especially those which are regularly touched.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <img src="img/img_2/infected.png">
+                    <p>
+                        Know the full range of symptoms of COVID-19:<br><br>
+                        The most common symptoms of COVID-19 are fever, dry cough, and tiredness.<br><br>
+                        Other symptoms that are less common and may affect some patients include loss of taste or smell,
+                        aches and pains, headache, sore throat, nasal congestion, red eyes, diarrhoea, or a skin rash.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <img src="img/img_2/005-first-aid-kit.png">
+                    <p>
+                        Stay home and self-isolate even if you have minor symptoms such as cough, headache, mild fever,
+                        until you recover.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <p>
+                        Copyright &copy; 2020 Xiangyu Liu All rights reserved.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <img src="img/img_2/010-social.png">
+                    <p>
+                        Maintain at least a 2-metre distance between yourself and others to reduce your risk of
+                        infection when they cough, sneeze or speak.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <img src="img/img_2/window.png">
+                    <p>
+                        Open a window. Increase the amount of ‘natural ventilation’ when indoors.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

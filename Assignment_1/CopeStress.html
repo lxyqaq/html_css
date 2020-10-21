@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Test3</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+
+            body {
+                justify-content: center;
+                align-self: center;
+                min-height: 100vh;
+                background: #575dbb;
+            }
+
+            .container {
+                position: relative;
+                max-width: 100%;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                grid-template-rows: minmax(100px, auto);
+                margin: 40px;
+                grid-auto-flow: dense;
+                grid-gap: 10px;
+            }
+
+            .container .box {
+                background: #ffffff;
+                padding: 20px;
+                display: grid;
+                font-size: 20px;
+                place-items: center;
+                text-align: center;
+                color: #54BAF3;
+                transition: 0.5s;
+            }
+
+            .container .box:hover {
+                background: #54BAF3;
+                color: #ffffff;
+            }
+
+            .container .box img {
+                position: relative;
+                max-width: 100px;
+                margin-bottom: 10px;
+            }
+
+            .container .box:nth-child(1) {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+
+            .container .box:nth-child(2) {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+
+            .container .box:nth-child(3) {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+
+            .container .box:nth-child(4) {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+
+            .container .box:nth-child(5) {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+
+            .container .box:nth-child(6) {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+
+            .container .box:nth-child(7) {
+                grid-column: span 4;
+                grid-row: span 1;
+            }
+
+            .container .box:nth-child(8) {
+                grid-column: span 4;
+                grid-row: span 1;
+                margin-top: 10px;
+            }
+
+            .container .box .content1 {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .container .box .content2 {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .container .box .content3 {
+                display: flex;
+                flex-direction: row-reverse;
+            }
+
+            .container .box .content4 {
+                display: flex;
+                flex-direction: row-reverse;
+            }
+
+            .container .box .content5 {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .container .box .content6 {
+                display: flex;
+                flex-direction: row;
+            }
+
+            @media (max-width: 991px) {
+                .container {
+                    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+                    grid-template-rows: minmax(auto, auto);
+                }
+
+                .container .box {
+                    grid-column: unset !important;
+                    grid-row: unset !important;
+                }
+
+            }
+
+            .navbar {
+                width: 1345px;
+                height: 20px;
+                line-height: 20px;
+                margin: 20px auto;
+                background-color: #575dbb;
+                list-style: none;
+                display: flex;
+            }
+
+            .navbar a {
+                display: block;
+                color: #54BAF3;
+                text-decoration: none;
+                font-size: 20px;
+            }
+
+            .navbar li {
+                flex-grow: 0.5;
+            }
+
+            .navbar a:hover {
+                color: #ffffff;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Covid19.html">COVID-19</a></li>
+                <li><a href="KeepSafe.html">How To Keep Safe</a></li>
+                <li><a href="CopeStress.html">How To Cope With Stress</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="box">
+                <div class="content1">
+                    <img src="img/img_3/phone-message.png">
+                    <p>
+                        It is normal to feel sad, stressed, confused, scared or
+                        Talking to people you trust can help. Contact your
+                        friends and family.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content2">
+                    <img src="img/img_3/tv.png">
+                    <p>
+                        Limit worry and agitation by lessening the time you
+                        and your family spend watching or listening to media
+                        coverage that you perceive as upsetting.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content3">
+                    <img src="img/img_3/broccoli.png">
+                    <p>
+                        If you must stay at home, maintain a healthy lifestyle -
+                        including proper diet, sleep, exercise and social contacts
+                        with loved ones at home and by email and phone with
+                        other family and friends.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content4">
+                    <img src="img/img_3/calendar.png">
+                    <p>
+                        Keep to regular routines and schedules as much
+                        as possible, or help create new ones in a new
+                        environment, including school/learning as well as
+                        time for safely playing and relaxing.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content5">
+                    <img src="img/img_3/not-allowed.png">
+                    <p>
+                        Don’t use smoking, alcohol or other drugs to deal with
+                        your emotions.
+                        If you feel overwhelmed, talk to a health worker or
+                        counsellor.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content6">
+                    <img src="img/img_3/006-guitar.png">
+                    <p>
+                        Studies show that listening to music can benefit overall well-being, help regulate emotions, and
+                        create happiness and relaxation in everyday life.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content7">
+                    <img src="img/img_3/meditation.png">
+                    <p>
+                        Sometimes, the best way to stop anxious thoughts is to walk away from the situation. Taking some
+                        time to focus on your body and not your mind may help relieve your anxiety.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <p>
+                        Copyright &copy; 2020 Xiangyu Liu All rights reserved.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
