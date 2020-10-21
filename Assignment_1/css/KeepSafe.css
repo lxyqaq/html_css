@@ -31,7 +31,7 @@ body {
     place-items: center;
     text-align: center;
     color: #54BAF3;
-    transition: 0.5s;
+    transition-duration: 0.5s;
 }
 
 .container .box:hover {
@@ -107,6 +107,7 @@ body {
 }
 
 @media (max-width: 991px) {
+
     .container {
         grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
         grid-template-rows: minmax(auto, auto);

@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+
 }
 
 body {
@@ -108,6 +109,7 @@ body {
 
 
 @media (max-width: 991px) {
+
     .container {
         grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
         grid-template-rows: minmax(auto, auto);

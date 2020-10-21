@@ -31,7 +31,7 @@ body {
     place-items: center;
     text-align: center;
     color: #54BAF3;
-    transition: 0.5s;
+    transition-duration: 0.5s;
 }
 
 .container .box:hover {
