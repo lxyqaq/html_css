@@ -2,121 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Title</title>
-        <style>
-
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                font-family: sans-serif;
-            }
-
-            body {
-                justify-content: center;
-                align-self: center;
-                min-height: 100vh;
-                background: #575dbb;
-            }
-
-            .container {
-                position: relative;
-                max-width: 100%;
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-                grid-template-rows: minmax(100px, auto);
-                margin: 40px;
-                grid-auto-flow: dense;
-                grid-gap: 10px;
-            }
-
-            .container .box {
-                background: #ffffff;
-                padding: 20px;
-                display: grid;
-                font-size: 20px;
-                place-items: center;
-                text-align: center;
-                color: #54BAF3;
-                transition: 0.5s;
-            }
-
-            .container .box:hover {
-                background: #54BAF3;
-                color: #ffffff;
-            }
-
-            .container .box img {
-                position: relative;
-                max-width: 100px;
-                margin-bottom: 10px;
-            }
-
-            .container .box:nth-child(1) {
-                grid-column: span 2;
-                grid-row: span 1;
-            }
-
-            .container .box:nth-child(2) {
-                grid-column: span 1;
-                grid-row: span 2;
-            }
-
-            .container .box:nth-child(4) {
-                grid-column: span 1;
-                grid-row: span 2;
-            }
-
-            .container .box:nth-child(5) {
-                grid-column: span 3;
-                grid-row: span 1;
-            }
-
-            .container .box:nth-child(6) {
-                grid-column: span 4;
-                grid-row: span 1;
-                margin-top: 10px;
-            }
-
-            @media (max-width: 991px) {
-                .container {
-                    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-                    grid-template-rows: minmax(auto, auto);
-                }
-
-                .container .box {
-                    grid-column: unset !important;
-                    grid-row: unset !important;
-                }
-
-            }
-
-            .navbar {
-                width: 1345px;
-                height: 20px;
-                line-height: 20px;
-                margin: 20px auto;
-                background-color: #575dbb;
-                list-style: none;
-                display: flex;
-            }
-
-            .navbar a {
-                display: block;
-                color: #54BAF3;
-                text-decoration: none;
-                font-size: 20px;
-            }
-
-            .navbar li {
-                flex-grow: 0.5;
-            }
-
-            .navbar a:hover {
-                color: #ffffff;
-            }
-
-        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Covid19</title>
+        <link rel="stylesheet" href="css/Covid19.css">
     </head>
     <body>
 
@@ -130,6 +18,7 @@
         </div>
 
         <div class="container">
+
             <div class="box">
                 <div class="content">
                     <img src="img/img_1/covid-19.png">
@@ -181,23 +70,6 @@
 
             <div class="box">
                 <div class="content">
-                    <img src="img/img_1/hospital.png">
-                    <p>
-                        Hospital beds in many countries cannot accommodate more and more patients.
-                    </p>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="content">
-                    <p>
-                        Copyright &copy; 2020 Xiangyu Liu All rights reserved.
-                    </p>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="content">
                     <img src="img/img_1/vaccine.png">
                     <p>
                         China is rapidly increasing the number of people receiving its experimental coronavirus
@@ -208,9 +80,26 @@
 
             <div class="box">
                 <div class="content">
+                    <img src="img/img_1/hospital.png">
+                    <p>
+                        Hospital beds in many countries cannot accommodate more and more patients.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
                     <img src="img/img_1/007-cancelled.png">
                     <p>
                         Many countries have reduced flights by more than 50%
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <p>
+                        Copyright &copy; 2020 Xiangyu Liu All rights reserved.
                     </p>
                 </div>
             </div>
