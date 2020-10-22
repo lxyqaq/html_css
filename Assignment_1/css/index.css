@@ -14,10 +14,8 @@ body {
 a {
     text-decoration: none;
     position: relative;
-    /* 文字大写 */
     text-transform: uppercase;
     color: #333333;
-    /* 1rem=16px */
     font-size: 8rem;
 }
 
@@ -26,14 +24,11 @@ a::after {
     position: absolute;
     top: 0;
     left: 0;
-    /* 文字透明色 */
     color: transparent;
     background-image: linear-gradient(to right,
     #c23616, #192a56, #00d2d3, yellow,
     #6d214f, #2e86de, #4cd137, #e84118);
-    /* 背景绘制区域 当值为text 的时候 代表设置了文字的镂空效果 但是前提必须是文字颜色为透明色 */
     background-clip: text;
-    /* 谷歌浏览器的私有属性 */
     -webkit-background-clip: text;
 }
 

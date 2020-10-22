@@ -32,12 +32,12 @@ body {
     place-items: center;
     text-align: center;
     color: #54BAF3;
-    transition: 0.5s;
 }
 
 .container .box:hover {
     background: #54BAF3;
     color: #ffffff;
+    transition-duration: 0.75s;
 }
 
 .container .box img {
