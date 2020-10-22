@@ -16,7 +16,7 @@ body {
     position: relative;
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
     grid-template-rows: minmax(100px, auto);
     margin: 30px;
     grid-auto-flow: dense;
@@ -116,6 +116,19 @@ body {
     .container .box {
         grid-column: unset !important;
         grid-row: unset !important;
+    }
+
+}
+
+@media (max-width: 640px) {
+
+    .navbar {
+        display: inline-block;
+        margin-top: 30px;
+    }
+
+    .navbar li {
+        margin-bottom: 5px;
     }
 
 }
