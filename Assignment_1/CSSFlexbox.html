@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>How To Cope With Stress</title>
+        <link rel="stylesheet" href="css/CSSFlexbox.css">
+    </head>
+    <body>
+
+        <div>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ResponsiveWebDesign.html">Responsive Web Design</a></li>
+                <li><a href="CSSGridLayout.html">CSS Grid Layout</a></li>
+                <li><a href="CSSFlexbox.html">CSS Flexbox</a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+
+            <div class="box">
+                <div class="content1">
+                    <img class="img1" src="img/img_3/001-layout.png">
+                    <p>
+                        CSS Flexible Box Layout, commonly known as Flexbox, is a CSS 3 web layout model. It is in
+                        the W3C's candidate recommendation (CR) stage. The flex layout allows responsive elements
+                        within a container to be automatically arranged depending upon screen size (or device).
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content2">
+                    <img class="img2" src="img/img_3/002-navigation.png">
+                    <p>
+                        The CSS property flex specifies how the elastic element can be stretched or shortened to fit the
+                        available space in the flex container. This is a shorthand property to set flex-grow,
+                        flex-shrink and flex-basis.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content3">
+                    <img class="img3" src="img/img_3/003-navigation-1.png">
+                    <p>
+                        For most purposes, authors should set flex to one of the following values: auto, initial, none,
+                        or a positive unitless number.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content4">
+                    <img class="img4" src="img/img_3/004-navigation-2.png">
+                    <p>
+                        By default flex items don't shrink below their minimum content size. To change this, set the
+                        item's min-width or min-height.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content5">
+                    <img class="img5" src="img/img_3/flex-container.png">
+                    <ul>
+                        <li>Main axis, main dimension. The main axis of the elastic container refers to the direction in
+                            which the elastic elements are mainly laid out. It extends in the main axis area.
+                        </li>
+                        <li>Spindle start point (main-Start), spindle end point (main-end). The elastic elements are
+                            placed in the container from the starting point of the spindle to the end of the spindle.
+                        </li>
+                        <li>Main size, main size property. The main axis size of an elastic element refers to its length
+                            in the main axis area. The main axis size attribute refers to its corresponding attribute.
+                        </li>
+                        <li>Cross axis, cross dimension. The lateral axis is perpendicular to the main axis. It extends
+                            in the lateral axis area.
+                        </li>
+                        <li>Cross-Start, cross-end. Floating rows are filled with elements and distributed along the
+                            lateral axis in the container from the start point to the end point.
+                        </li>
+                        <li>Cross size, cross size property. The lateral axis size of an elastic element refers to its
+                            length in the lateral axis area. Its cross-axis size attribute refers to its corresponding
+                            attribute
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content6">
+                    <img class="img6" src="img/img_3/bg2015071005.png">
+                    <p>
+                        The flex-direction property determines the direction of the main axis (that is, the direction in
+                        which the items are arranged).
+                        <textarea class="textarea1" disabled="disabled">
+                            .box {
+                              flex-direction: row | row-reverse | column | column-reverse;
+                            }
+                        </textarea>
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content7">
+                    <img class="img7" src="img/img_3/bg2015071006.png">
+                    <p>
+                        By default, items are arranged on a line (also known as "axis line"). The flex-wrap attribute
+                        defines how to wrap if an axis line cannot fit.
+                        <textarea class="textarea2" disabled="disabled">
+                            .box{
+                              flex-wrap: nowrap | wrap | wrap-reverse;
+                            }
+                        </textarea>
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content8">
+                    <img class="img8" src="img/img_3/bg2015071010.png">
+                    <div>
+                        The justify-content attribute defines the alignment of the item on the main axis.It may take 5
+                        values, and the specific alignment is related to the direction of the axis. The following
+                        assumes that the main axis is from left to right.
+                        <textarea class="textarea3" disabled="disabled">
+                            .box {
+                              justify-content: flex-start | flex-end | center | space-between | space-around;
+                            }
+                        </textarea>
+                        <ul>
+                            <li>flex-start (default): left-justified</li>
+                            <br>
+                            <li>flex-end: align right</li>
+                            <br>
+                            <li>center: centered</li>
+                            <br>
+                            <li>space-between: align at both ends, the space between items is equal.</li>
+                            <br>
+                            <li>Space-around: The space on both sides of each item is equal.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content9">
+                    <img class="img9" src="img/img_3/bg2015071014.png">
+                    <div>
+                        The flex-grow attribute defines the zoom ratio of the item, and the default is 0, that is, if
+                        there is remaining space, it will not zoom.
+                        <textarea class="textarea4" disabled="disabled">
+                            .item {
+                              flex-grow: &lt;number&gt; /* default 0 */
+                            }
+                        </textarea>
+                        <div>If the flex-grow property of all items is 1, they will equally divide the remaining space
+                            (if any). If the flex-grow property of one item is 2 and the other items are all 1, the
+                            remaining space occupied by the former will be twice that of other items.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content10">
+                    <img class="img10" src="img/img_3/bg2015071015.jpg">
+                    <div>
+                        The flex-shrink attribute defines the reduction ratio of the item, and the default is 1, which
+                        means that if the space is insufficient, the item will shrink.
+                        <textarea class="textarea4" disabled="disabled">
+                            .item {
+                              flex-shrink: &lt;number&gt; /* default 1 */
+                            }
+                        </textarea>
+                        <div>
+                            If the flex-shrink property of all items is 1, when the space is insufficient, all items
+                            will be reduced proportionally. If the flex-shrink property of one item is 0 and the other
+                            items are all 1, the former will not shrink when the space is insufficient.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content10">
+                    <p>
+                        Copyright &copy; 2020 Xiangyu Liu All rights reserved.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>

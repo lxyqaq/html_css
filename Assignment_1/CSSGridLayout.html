@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>CSS Grid Layout</title>
+        <link rel="stylesheet" href="css/CSSGridLayout.css">
+    </head>
+    <body>
+
+        <div>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ResponsiveWebDesign.html">Responsive Web Design</a></li>
+                <li><a href="CSSGridLayout.html">CSS Grid Layout</a></li>
+                <li><a href="CSSFlexbox.html">CSS Flexbox</a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+
+            <div class="box">
+                <div class="content1">
+                    <img class="img1" src="img/img_2/002-sitemap.png">
+                    <p>
+                        <strong>CSS grid layout</strong> or CSS grid is a technique in Cascading Style Sheets that
+                        allows web developers
+                        to create complex responsive web design layouts more easily and consistently across browsers.[1]
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content2">
+                    <img class="img2" src="img/img_2/001-listing.png">
+                    <p>
+                        You can only specify the explicit or the implicit grid properties in a single grid declaration.
+                        The sub-properties you don’t specify are set to their initial value,as normal for shorthands.
+                        Also, the gutter properties are NOT reset by this shorthand.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content3">
+                    <img class="img3" src="img/img_2/003-grid.png">
+                    <p>
+                        The grid CSS property is a shorthand property that sets all of the explicit and implicit grid
+                        properties in a single declaration.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content4">
+                    <img class="img4" src="img/img_2/004-grid-1.png">
+                    <h3>Constituent properties</h3><br>
+                    <p>This property is a shorthand for the following CSS properties:</p><br>
+                    <ul>
+                        <li>grid-atuo-columns</li>
+                        <li>grid-atuo-flow</li>
+                        <li>grid-atuo-rows</li>
+                        <li>grid-template-areas</li>
+                        <li>grid-template-columns</li>
+                        <li>grid-template-rows</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content5">
+                    <img class="img5" src="img/img_2/005-content.png">
+                    <p>
+                        CSS grid can create more asymmetrical layouts than the previous grid and layout options like CSS
+                        floats. It also allows for more standardized code that works across browsers. This is in
+                        contrast to relying on specific browser hacks or complicated workarounds.[2]
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content6">
+                    <img class="img6" src="img/img_2/006-sitemap-1.png">
+                    <p>
+                        The column-gap CSS property sets the size of the gap (gutter) between an element's columns.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content7">
+                    <p>The area with grid layout is called "container". The sub-elements within the container that are
+                        positioned by the grid are called "items".</p>
+                    <textarea class="textarea1" disabled="disabled">
+                        <div>
+                            <div><p>1</p></div>
+                            <div><p>2</p></div>
+                            <div><p>3</p></div>
+                        </div>
+                    </textarea>
+                    <p>In the above code, the outermost &lt;div&gt; element is the container, and the three inner &lt;div&gt;
+                        elements are the items.</p><br>
+                    <p>Note: The item can only be the top-level child element of the container, not the child element of
+                        the item. For example, the &lt;p&gt; element in the above code is not an item. The Grid layout
+                        is only effective for the project.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content8">
+                    <p>The horizontal area in the container is called "row" and the vertical area is called
+                        "column".</p>
+                    <img class="img7" src="img/img_2/1_bg2019032502.png">
+                    <p>In the figure above, the horizontal dark areas are "rows" and the vertical dark areas are
+                        "columns".</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content9">
+                    <p>Grid layout attributes are divided into two categories. One type is defined on the container and
+                        is called the container attribute; the other type is defined on the item and is called the
+                        project attribute. This part first introduces container properties.</p>
+                    <textarea class="textarea2" disabled="disabled">
+                        <div id="container">
+                            <div class="item item-1">1</div>
+                            <div class="item item-2">2</div>
+                            <div class="item item-3">3</div>
+                            <div class="item item-4">4</div>
+                            <div class="item item-5">5</div>
+                            <div class="item item-6">6</div>
+                            <div class="item item-7">7</div>
+                            <div class="item item-8">8</div>
+                            <div class="item item-9">9</div>
+                        </div>
+                    </textarea>
+                    <textarea class="textarea3" disabled="disabled">
+                        #container{
+                          display: grid;
+                          grid-template-columns: 50px 50px 50px;
+                          grid-template-rows: 50px 50px 50px;
+                        }
+                    </textarea>
+                    <img class="img8" src="img/img_2/bg2019032504.png">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content10">
+                    <p>The grid-row-gap property sets the spacing between rows (row spacing), and the grid-column-gap
+                        property sets the spacing between columns (column spacing).</p>
+                    <textarea class="textarea4" disabled="disabled">
+                        <div id="container">
+                            <div class="item item-1">1</div>
+                            <div class="item item-2">2</div>
+                            <div class="item item-3">3</div>
+                            <div class="item item-4">4</div>
+                            <div class="item item-5">5</div>
+                            <div class="item item-6">6</div>
+                            <div class="item item-7">7</div>
+                            <div class="item item-8">8</div>
+                            <div class="item item-9">9</div>
+                        </div>
+                    </textarea>
+                    <textarea class="textarea5" disabled="disabled">
+                        #container{
+                          display: grid;
+                          grid-template-columns: 100px 100px 100px;
+                          grid-template-rows: 100px 100px 100px;
+                          grid-row-gap: 20px;
+                          grid-column-gap: 20px;
+                        }
+                    </textarea>
+                    <img class="img9" src="img/img_2/bg2019032511.png">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content11">
+                    <p>
+                        The grid-auto-columns property and grid-auto-rows property are used to set the column width and
+                        row height of the redundant grid automatically created by the browser. They are written in
+                        exactly the same way as grid-template-columns and grid-template-rows. If you do not specify
+                        these two properties, the browser completely determines the column width and row height of the
+                        new grid based on the size of the cell content.
+                    </p>
+                    <textarea class="textarea6" disabled="disabled">
+                        <div id="container">
+                            <div class="item item-1">1</div>
+                            <div class="item item-2">2</div>
+                            <div class="item item-3">3</div>
+                            <div class="item item-4">4</div>
+                            <div class="item item-5">5</div>
+                            <div class="item item-6">6</div>
+                            <div class="item item-7">7</div>
+                            <div class="item item-8">8</div>
+                            <div class="item item-9">9</div>
+                        </div>
+                    </textarea>
+                    <textarea class="textarea7" disabled="disabled">
+                        #container{
+                          display: grid;
+                          grid-template-columns: 100px 100px 100px;
+                          grid-template-rows: 100px 100px 100px;
+                          grid-auto-rows: 50px;
+                        }
+                    </textarea>
+                    <img class="img10" src="img/img_2/bg2019032525.png">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content12">
+                    <p>
+                        Copyright &copy; 2020 Xiangyu Liu All rights reserved.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
