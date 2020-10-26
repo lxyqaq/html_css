@@ -84,21 +84,6 @@ body {
 .container .box:nth-child(8) {
     grid-column: span 4;
     grid-row: span 1;
-}
-
-.container .box:nth-child(9) {
-    grid-column: span 4;
-    grid-row: span 1;
-}
-
-.container .box:nth-child(10) {
-    grid-column: span 4;
-    grid-row: span 1;
-}
-
-.container .box:nth-child(11) {
-    grid-column: span 4;
-    grid-row: span 1;
     margin-top: 10px;
 }
 
@@ -147,7 +132,7 @@ body {
     .navbar li {
         margin-bottom: 5px;
     }
-    
+
 }
 
 

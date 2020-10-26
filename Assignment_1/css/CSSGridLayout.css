@@ -39,7 +39,7 @@ body {
     transition-duration: 0.75s;
 }
 
-.img1,.img2,.img3,.img4,.img5,.img6 {
+.img1, .img2, .img3, .img4, .img5, .img6 {
     position: relative;
     max-width: 100px;
     margin-bottom: 10px;
@@ -158,7 +158,7 @@ ul li {
     height: 100px;
     resize: none;
     overflow: hidden;
-    border-radius:5px;
+    border-radius: 5px;
 }
 
 .textarea2 {
@@ -169,7 +169,7 @@ ul li {
     resize: none;
     overflow: hidden;
     margin-top: 10px;
-    border-radius:5px;
+    border-radius: 5px;
 }
 
 .textarea3 {
@@ -180,7 +180,7 @@ ul li {
     resize: none;
     overflow: hidden;
     margin-top: 10px;
-    border-radius:5px;
+    border-radius: 5px;
 }
 
 .textarea4 {
@@ -191,7 +191,7 @@ ul li {
     resize: none;
     overflow: hidden;
     margin-top: 10px;
-    border-radius:5px;
+    border-radius: 5px;
 }
 
 .textarea5 {
@@ -202,7 +202,7 @@ ul li {
     resize: none;
     overflow: hidden;
     margin-top: 10px;
-    border-radius:5px;
+    border-radius: 5px;
 }
 
 .textarea6 {
@@ -213,7 +213,7 @@ ul li {
     resize: none;
     overflow: hidden;
     margin-top: 10px;
-    border-radius:5px;
+    border-radius: 5px;
 }
 
 .textarea7 {
@@ -224,7 +224,7 @@ ul li {
     resize: none;
     overflow: hidden;
     margin-top: 10px;
-    border-radius:5px;
+    border-radius: 5px;
 }
 
 

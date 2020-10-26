@@ -39,23 +39,23 @@ body {
     transition-duration: 0.75s;
 }
 
-.img1,.img2,.img3,.img4 {
+.img1, .img2, .img3, .img4 {
     position: relative;
     max-width: 100px;
     margin-bottom: 10px;
 }
 
-.img5,.img6,.img7,.img8,.img9,.img10 {
+.img5, .img6, .img7, .img8, .img9, .img10 {
     position: relative;
     width: 410px;
 }
 
-.textarea1,.textarea3,.textarea4,.textarea5 {
+.textarea1, .textarea3, .textarea4, .textarea5 {
     display: block;
     position: relative;
     resize: none;
     overflow: hidden;
-    border-radius:5px;
+    border-radius: 5px;
     margin: auto auto;
     width: 700px;
     height: 57px;
@@ -66,7 +66,7 @@ body {
     position: relative;
     resize: none;
     overflow: hidden;
-    border-radius:5px;
+    border-radius: 5px;
     margin: auto auto;
     width: 700px;
     height: 85px;
@@ -125,16 +125,7 @@ body {
 .container .box:nth-child(11) {
     grid-column: span 4;
     grid-row: span 1;
-}
-
-.container .box:nth-child(12) {
-    grid-column: span 4;
-    grid-row: span 1;
-}
-
-.container .box:nth-child(13),.box:nth-child(12) {
-    grid-column: span 4;
-    grid-row: span 1;
+    margin-top: 10px;
 }
 
 .container .box .content1 {
@@ -187,6 +178,7 @@ body {
     flex-direction: row;
 }
 
+
 .navbar {
     height: 20px;
     line-height: 20px;
@@ -207,7 +199,7 @@ body {
     color: #ffffff;
 }
 
-.content5 ul li{
+.content5 ul li {
     font-size: 0.75em;
     list-style-type: none;
     text-align: left;
