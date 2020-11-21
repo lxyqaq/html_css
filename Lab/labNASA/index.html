@@ -1,17 +1,21 @@
 <!DOCTYPE html >
-<html lang="en">  
-	<head>
-		<meta charset="utf-8">
-		<title>LabNASA</title>
-		<link rel="stylesheet" href="main.css" />
-		<script type="text/javascript" src="labNasa.js"></script>
-	</head>
-	<body>
-		<h1>Astronomy Picture of the Day</h1>
-		<button id="button">Get the Data!</button>
-		
-		<!-- Insert the returned data into this div -->
-		<div id="data"></div>	
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>LabNASA</title>
+        <link rel="stylesheet" href="main.css"/>
+        <script type="text/javascript" src="labNasa.js"></script>
+    </head>
+    <body>
+        <h1>Astronomy Picture of the Day</h1>
+        <label for="date">Enter the date:</label>
+        <input type="date" id="inputdate">
+        <button id="button">Get the Data!</button>
 
-	</body>
+        <!-- Insert the returned data into this div -->
+        <div id="data">
+
+        </div>
+
+    </body>
 </html>

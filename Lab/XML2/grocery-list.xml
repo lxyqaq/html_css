@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE grocery-list SYSTEM "grocery.dtd">
+<grocery-list>
+    <veggies>
+        <item>lettuce</item>
+        <item>tomatoes</item>
+        <item>onion</item>
+    </veggies>
+    <meat>
+        <item>chicken</item>
+        <item>beef</item>
+    </meat>
+    <dairyProducts>
+        <item>cheese</item>
+    </dairyProducts>
+    <misc>
+        <item>bread</item>
+        <item>eggs</item>
+    </misc>
+</grocery-list>

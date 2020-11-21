@@ -1,0 +1,15 @@
+<!DOCTYPE books SYSTEM "book.dtd">
+<books>
+    <book publisher="Wiley" author="Paul">
+        <title>XML</title>
+        <chapter chNo="1">This is chapter 1</chapter>
+        <chapter chNo="2">This is chapter 2</chapter>
+        <price currency="euro">50</price>
+    </book>
+    <book publisher="Pearson" author="John Sweeney">
+        <title>REST</title>
+        <chapter chNo="1">This is chapter 1</chapter>
+        <chapter chNo="2">This is chapter 2</chapter>
+        <price>60</price>
+    </book>
+</books>

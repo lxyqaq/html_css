@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE course SYSTEM "course.dtd">
+<course id="CS134">
+    <title>Clientside Technologies</title>
+    <prerequisite>Programming</prerequisite>
+    <lesson>
+        <name>JavaScript</name>
+        <concept>Array Basics</concept>
+        <concept>Array Methods</concept>
+    </lesson>
+    <textbook>Javascript and DOM Scripting, Murach</textbook>
+</course>

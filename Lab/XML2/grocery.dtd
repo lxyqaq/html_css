@@ -1,0 +1,6 @@
+<!ELEMENT grocery-list (veggies,meat,dairyProducts,misc)>
+        <!ELEMENT veggies (item+)>
+        <!ELEMENT meat (item+)>
+        <!ELEMENT dairyProducts (item+)>
+        <!ELEMENT misc (item+)>
+        <!ELEMENT item (#PCDATA)>

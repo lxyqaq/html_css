@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="css/site.css">
+        <link rel="stylesheet" href="css/Chart.min.css">
+        <script rel="script" src="js/Chart.min.js"></script>
+        <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDg6FIg6Dncs_h9nkN9aMOuvr1eLNDi-1M&callback=initMap&libraries=&v=weekly"
+                defer
+        ></script>
+    </head>
+    <body>
+
+        <header>
+            <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..."/>
+            <div class="switch">
+                <input type="radio" name="switcher" id="metric" value="metric">
+                <div for="metric" class="left">Metric: &deg;C</div>
+                <input type="radio" name="switcher" id="imperial" value="imperial">
+                <div for="imperial" class="right">Imperial: &deg;F</div>
+            </div>
+        </header>
+
+        <main class="main-container">
+
+            <div class="location-and-date">
+                <h1 class="location-and-date__location">London, UK</h1>
+                <div>Monday 29 July 2020</div>
+            </div>
+
+            <div class="current-temperature">
+                <div class="current-temperature__icon-container">
+                    <img src="icons/mostly-sunny.svg" class="current-temperature__icon" alt="">
+                </div>
+                <div class="current-temperature__content-container">
+                    <div class="current-temperature__value">21&deg;C</div>
+                    <div class="current-temperature__summary">Mostly Sunny</div>
+                </div>
+            </div>
+
+            <div class="current-stats">
+                <div class="current-stats_temperature_high_low">
+                    <div class="current-stats__value">23&deg;C</div>
+                    <div class="current-stats__label">High</div>
+                    <div class="current-stats__value">14&deg;C</div>
+                    <div class="current-stats__label">Low</div>
+                </div>
+                <div class="current-stats_temperature_wind_rain">
+                    <div class="current-stats__value">7mph</div>
+                    <div class="current-stats__label">Wind</div>
+                    <div class="current-stats__value">0%</div>
+                    <div class="current-stats__label">Rain</div>
+                </div>
+                <div class="current-stats_temperature_ground_humidity">
+                    <div class="current-stats__value">976hPa</div>
+                    <div class="current-stats__label">Ground pressure</div>
+                    <div class="current-stats__value">84%</div>
+                    <div class="current-stats__label">Humidity</div>
+                </div>
+            </div>
+
+            <div id="map"></div>
+
+            <div class="next-5-days">
+                <h2 class="next-5-days__heading">Next 5 days</h2>
+                <div class="next-5-days__container">
+
+                    <div class="next-5-days__row">
+
+                        <div id="day1_1" class="next-5-days__date">
+                            Tuesday
+                            <div class="next-5-days__label">30/7</div>
+                        </div>
+
+                        <div id="day1_2" class="next-5-days__low">
+                            10&deg;C
+                            <div class="next-5-days__label">Low</div>
+                        </div>
+
+                        <div id="day1_3" class="next-5-days__high">
+                            21&deg;C
+                            <div class="next-5-days__label">High</div>
+                        </div>
+
+                        <div id="day1_4" class="next-5-days__icon">
+                            <img src="icons/sunny.svg" alt=" ">
+                        </div>
+
+                        <div id="day1_5" class="next-5-days__rain">
+                            0%
+                            <div class="next-5-days__label">Rain</div>
+                        </div>
+
+                        <div id="day1_6" class="next-5-days__wind">
+                            12mph
+                            <div class="next-5-days__label">Wind</div>
+                        </div>
+
+                    </div>
+                    <div class="next-5-days__row">
+
+                        <div id="day2_1" class="next-5-days__date">
+                            Wednesday
+                            <div class="next-5-days__label">31/7</div>
+                        </div>
+
+                        <div id="day2_2" class="next-5-days__low">
+                            9&deg;C
+                            <div class="next-5-days__label">Low</div>
+                        </div>
+
+                        <div id="day2_3" class="next-5-days__high">
+                            18&deg;C
+                            <div class="next-5-days__label">High</div>
+                        </div>
+
+                        <div id="day2_4" class="next-5-days__icon">
+                            <img src="icons/mostly-sunny.svg" alt="Mostly sunny">
+                        </div>
+
+                        <div id="day2_5" class="next-5-days__rain">
+                            3%
+                            <div class="next-5-days__label">Rain</div>
+                        </div>
+
+                        <div id="day2_6" class="next-5-days__wind">
+                            7mph
+                            <div class="next-5-days__label">Wind</div>
+                        </div>
+
+                    </div>
+                    <div class="next-5-days__row">
+
+                        <div id="day3_1" class="next-5-days__date">
+                            Thursday
+                            <div class="next-5-days__label">1/8</div>
+                        </div>
+
+                        <div id="day3_2" class="next-5-days__low">
+                            7&deg;C
+                            <div class="next-5-days__label">Low</div>
+                        </div>
+
+                        <div id="day3_3" class="next-5-days__high">
+                            15&deg;C
+                            <div class="next-5-days__label">High</div>
+                        </div>
+
+                        <div id="day3_4" class="next-5-days__icon">
+                            <img src="icons/mostly-sunny.svg" alt="Mostly sunny">
+                        </div>
+
+                        <div id="day3_5" class="next-5-days__rain">
+                            75%
+                            <div class="next-5-days__label">Rain</div>
+                        </div>
+
+                        <div id="day3_6" class="next-5-days__wind">
+                            11mph
+                            <div class="next-5-days__label">Wind</div>
+                        </div>
+
+                    </div>
+                    <div class="next-5-days__row">
+
+                        <div id="day4_1" class="next-5-days__date">
+                            Friday
+                            <div class="next-5-days__label">2/8</div>
+                        </div>
+
+                        <div id="day4_2" class="next-5-days__low">
+                            12&deg;C
+                            <div class="next-5-days__label">Low</div>
+                        </div>
+
+                        <div id="day4_3" class="next-5-days__high">
+                            24&deg;C
+                            <div class="next-5-days__label">High</div>
+                        </div>
+
+                        <div id="day4_4" class="next-5-days__icon">
+                            <img src="icons/sunny.svg" alt="Sunny">
+                        </div>
+
+                        <div id="day4_5" class="next-5-days__rain">
+                            2%
+                            <div class="next-5-days__label">Rain</div>
+                        </div>
+
+                        <div id="day4_6" class="next-5-days__wind">
+                            8mph
+                            <div class="next-5-days__label">Wind</div>
+                        </div>
+
+                    </div>
+                    <div class="next-5-days__row">
+
+                        <div id="day5_1" class="next-5-days__date">
+                            Saturday
+                            <div class="next-5-days__label">3/8</div>
+                        </div>
+
+                        <div id="day5_2" class="next-5-days__low">
+                            10&deg;C
+                            <div class="next-5-days__label">Low</div>
+                        </div>
+
+                        <div id="day5_3" class="next-5-days__high">
+                            21&deg;C
+                            <div class="next-5-days__label">High</div>
+                        </div>
+
+                        <div id="day5_4" class="next-5-days__icon">
+                            <img src="icons/mostly-sunny.svg" alt="Mostly sunny">
+                        </div>
+
+                        <div id="day5_5" class="next-5-days__rain">
+                            0%
+                            <div class="next-5-days__label">Rain</div>
+                        </div>
+
+                        <div id="day5_6" class="next-5-days__wind">
+                            12mph
+                            <div class="next-5-days__label">Wind</div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="hourly_forecast">
+                <div>
+                    <h2>Search for a city to be compared</h2>
+                </div>
+                <div>
+                    <input type="text" autocomplete="off" class="search-box2" placeholder="Search for a city..."/>
+                </div>
+                <div class="switch">
+                    <input type="radio" name="switcher" id="temperature" value="metric">
+                    <div for="metric" class="left">Temperature</div>
+                    <input type="radio" name="switcher" id="precipitation" value="imperial">
+                    <div for="imperial" class="right">Cloudiness</div>
+                </div>
+            </div>
+
+            <canvas id="myChart"></canvas>
+
+        </main>
+
+        <footer>Copyright &copy; 2020 Xiangyu Liu All rights reserved.</footer>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

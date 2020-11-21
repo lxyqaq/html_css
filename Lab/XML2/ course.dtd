@@ -1,0 +1,9 @@
+<!ELEMENT course (title,prerequisite,lesson,textbook)>
+        <!ELEMENT title (#PCDATA)>
+        <!ELEMENT prerequisite (#PCDATA)>
+        <!ELEMENT lesson (name,concept+)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT concept (#PCDATA)>
+        <!ELEMENT textbook (#PCDATA)>
+        <!ATTLIST course id CDATA #REQUIRED>
+
