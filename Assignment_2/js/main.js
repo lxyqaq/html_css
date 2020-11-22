@@ -11,9 +11,11 @@ searchbox2.addEventListener('keypress', setQuery2);
 
 let map, infoWindow;
 
+displayChart3();
+
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
-        center: {lat: -34.397, lng: 150.644},
+        center: {lat: 51.507, lng: -0.127},
         zoom: 11,
     });
     infoWindow = new google.maps.InfoWindow();
@@ -355,6 +357,49 @@ function displayChart2() {
                         stepSize: 10,
                         callback: function (value, index, values) {
                             return value + '%';
+                        },
+                    }
+                }]
+            },
+            title: {
+                display: true,
+                text: 'Hourly Forecast',
+                fontColor: '#FFFFFF',
+                fontSize: 20,
+            }
+        }
+    });
+}
+
+function displayChart3() {
+    var ctx = document.getElementById('myChart').getContext('2d');
+    Chart.defaults.global.defaultFontColor = 'white';
+    var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['Now', 'Three hours later', 'Six hours later', 'Nine hours later', 'Twelve hours later', 'Fifteen hours later', 'Eighteen hours later'],
+            datasets: [
+                {
+                    label: 'London',
+                    data: [10,13,14,16,12,9,7,4],
+                    borderColor: '#DC7454'
+                },
+                {
+                    label: 'London',
+                    data: [10,13,14,16,12,9,7,4],
+                    borderColor: '#b3dc54'
+                }
+            ]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        suggestedMin: 0,
+                        suggestedMax: 35,
+                        stepSize: 3,
+                        callback: function (value, index, values) {
+                            return value + '°C';
                         },
                     }
                 }]
