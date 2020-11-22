@@ -381,12 +381,12 @@ function displayChart3() {
             datasets: [
                 {
                     label: 'London',
-                    data: [10,13,14,16,12,9,7,4],
+                    data: [10, 13, 14, 16, 12, 9, 7, 4],
                     borderColor: '#DC7454'
                 },
                 {
                     label: 'London',
-                    data: [10,13,14,16,12,9,7,4],
+                    data: [10, 13, 14, 16, 12, 9, 7, 4],
                     borderColor: '#b3dc54'
                 }
             ]
