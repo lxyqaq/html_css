@@ -15,7 +15,7 @@ displayChart3();
 
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
-        center: {lat: 51.507, lng: -0.127},
+        center: {lat: 53.344, lng: -6.2672},
         zoom: 11,
     });
     infoWindow = new google.maps.InfoWindow();
@@ -378,12 +378,12 @@ function displayChart3() {
             labels: ['Now', 'Three hours later', 'Six hours later', 'Nine hours later', 'Twelve hours later', 'Fifteen hours later', 'Eighteen hours later'],
             datasets: [
                 {
-                    label: 'London',
+                    label: 'Dublin',
                     data: [10, 13, 14, 16, 12, 9, 7, 4],
                     borderColor: '#DC7454'
                 },
                 {
-                    label: 'London',
+                    label: 'Dublin',
                     data: [10, 13, 14, 16, 12, 9, 7, 4],
                     borderColor: '#b3dc54'
                 }
