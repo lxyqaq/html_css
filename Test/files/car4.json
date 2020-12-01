@@ -1,0 +1,9 @@
+{
+  "car": {
+    "name": "Mustang",
+    "color": "Red",
+    "style": "sport",
+    "price": "50000",
+    "img": "images/mustang.webp"
+  }
+}

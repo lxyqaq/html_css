@@ -1,0 +1,9 @@
+{
+  "car": {
+    "name": "Fiesta",
+    "color": "Blue",
+    "style": "sport",
+    "price": "50000",
+    "img": "images/fiesta.webp"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "car": {
+    "name": "Mondeo",
+    "color": "Blue",
+    "style": "sport",
+    "price": "50000",
+    "img": "images/mondeo.webp"
+  }
+}

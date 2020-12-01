@@ -1,0 +1,73 @@
+html {
+    background-color: beige;
+}
+
+body {
+    background-color: white;
+    width: 700px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 10px #B5651D inset;
+    padding: 1.5em;
+    margin: 1em auto;
+}
+
+header {
+    margin-bottom: 2em;
+}
+
+header img {
+    float: right;
+}
+
+header h1 {
+    font-size: 220%;
+    color: green;
+    margin: 0.2em;
+}
+
+header h2 {
+    margin: 0.6em 1.3em;
+    color: goldenrod;
+}
+
+nav {
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-weight: bold;
+    border: 2px green solid;
+    padding: 7px;
+}
+
+nav a {
+    padding: 7px 47px;
+    text-decoration: none;
+    color: maroon;
+}
+
+nav .border {
+    border-right: 2px green solid;
+}
+
+nav .border:hover {
+    color: green;
+}
+
+section {
+    font-size: 120%;
+}
+
+section img.car {
+    float: left;
+}
+
+section p {
+    text-indent: 55px;
+}
+
+footer {
+    margin-top: 1em;
+    border-top: 2px green solid;
+    text-align: center;
+    color: #888;
+    margin: 0;
+}

@@ -1,0 +1,9 @@
+{
+  "car": {
+    "name": "Focus",
+    "color": "Red",
+    "style": "sport",
+    "price": "50000",
+    "img": "images/focus.webp"
+  }
+}
