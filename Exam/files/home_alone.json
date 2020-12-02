@@ -1,0 +1,9 @@
+{
+  "movie": {
+    "name": "Home Alone",
+    "genre": "Family",
+    "time": "103 minutes",
+    "rating": "PG",
+    "img": "images/home_alone.jpg"
+  }
+}

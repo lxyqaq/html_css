@@ -1,0 +1,9 @@
+{
+  "movie": {
+    "name": "Die Hard",
+    "genre": "Action",
+    "time": "132 minutes",
+    "rating": "R",
+    "img": "images/die_hard.jpg"
+  }
+}

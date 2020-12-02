@@ -1,0 +1,9 @@
+{
+  "movie": {
+    "name": "Gremlins",
+    "genre": "Fantasy",
+    "time": "106 minutes",
+    "rating": "PG",
+    "img": "images/gremlins.jpg"
+  }
+}

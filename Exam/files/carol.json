@@ -1,0 +1,9 @@
+{
+  "movie": {
+    "name": "A Christmas Carol",
+    "genre": "Animation, Family",
+    "time": "96 minutes",
+    "rating": "PG",
+    "img": "images/carol.jpg"
+  }
+}
