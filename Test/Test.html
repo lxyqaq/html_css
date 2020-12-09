@@ -3,10 +3,61 @@
     <head>
         <meta charset="UTF-8">
         <title>Title</title>
-        <script type="text/javascript">
-            document.write("Hello World!");
-        </script>
+        <style>
+            /*<!--LabelSelector-->*/
+            div {
+                color: green;
+            }
+            /*IDSelector*/
+            #i1 {
+                font-size: 56px;
+            }
+            /*ClassSelector*/
+            .c1 {
+                background-color: white;
+            }
+            /*LevelSelector*/
+            .c1 div p .c3 {
+                color: red;
+                font-size: 56px;
+            }
+            /*CombinationSelector*/
+            .c4, .c5, .c6 {
+                background-color: rebeccapurple;
+            }
+            /*AttributeSelector*/
+            .c1[alex='123'] {
+                color: red;
+            }
+        </style>
     </head>
     <body>
+        <div class="c4"></div>
+        <div class="c5"></div>
+        <div class="c6"></div>
+        <hr/>
+        <!-- ClassSelector -->
+        <span class="c1">1</span>
+        <span class="c1">2</span>
+        <span class="c1">3</span>
+        <!-- IDSelector -->
+        <a id="i1">baidu</a>
+        <hr/>
+        <!-- LabelSelector -->
+        <div>99</div>
+        <div>99</div>
+        <div>99</div>
+        <div>99</div>
+        <div class="c1">test
+            <div>
+                <p>
+                    <!-- LevelSelector -->
+                    <span class="c3">888888888888</span>
+                </p>
+            </div>
+        </div>
+        <!-- AttributeSelector -->
+        <div class="c1" alex="123"> alex--test</div>
+        <div class="c1"> alex--test</div>
     </body>
 </html>
