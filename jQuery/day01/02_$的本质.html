@@ -1,18 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>$的本质</title>
-        <script type="text/javascript" src="../js/jquery.js"></script>
-        <script type="text/javascript">
-
-            $(function () {
-                alert($);
-            })
-
-        </script>
-    </head>
-    <body>
-
-    </body>
-</html>
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>HelloWorld</title>
+            <script type="text/javascript" src="../js/jquery.js"></script>
+            <script type="text/javascript">
+                $(function () {
+                   var btn01 = $("#btn01");
+                   btn01.click(function () {
+                       alert("jQuery click event");
+                   })
+                })
+            </script>
+        </head>
+        <body>
+            <button id="btn01">click event</button>
+        </body>
+    </html>
